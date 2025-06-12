@@ -1,33 +1,58 @@
-# CAMEMAKE – Universal MIPI CSI-2 Camera Adapter for Nvidia Jetson or any other development kit with the same CSI pinout
+# CAMEMAKE – Universal MIPI CSI-2 Camera Adapter for Jetson
 
 ![CAMEMAKE](./8d965933-4bc1-402a-b9b1-58cc3b36b0d1.jpg)
 
-**CAMEMAKE** created an open hardware interface board designed to simplify connection between bare factory camera modules and NVIDIA Jetson platforms (Jetson Nano, TX2, Xavier NX, etc.) with a **2-lane MIPI CSI interface**.
-
-This adapter brings everything your camera module typically lacks:
-- A precise **timing crystal**
-- Proper **voltage regulation** for all sensor domains
-- Industry-standard **FPC input** and **board-to-board output**
+**CAMEMAKE** created an open-source hardware adapter board that connects MIPI CSI-2 camera modules directly to NVIDIA Jetson boards such as the Nano, TX2, and Xavier NX. Many factory camera modules lack a timing crystal and require multiple independent voltage rails — this board provides those, allowing seamless integration.
 
 ---
 
-## 📸 Why CAMEMAKE?
+## 🔗 Altium Designer Project
 
-A camera modules standard comes without:
-- A 24MHz crystal for MCLK
-- Require multiple, specific voltage rails
-- Don’t use a standard FPC connector format
-- Can’t be directly used with Jetson boards or any other with the same pinout without custom hardware
+View the full schematic and 3D layout online:
 
-CAMEMAKE solves these issues in a compact, drop-in solution.
+**[🧭 View in Altium 365](https://365.altium.com/files/9A22F9D0-325F-4AF5-839A-7F1FEFB84FBE?variant=[No+Variations])**
+![PCB 3D View](./pcb3D.jpg)
 
 ---
 
-## 🔌 Hardware Overview
+## 🧰 Key Features
 
-### ▶️ Input: 30-pin FPC Connector (from Jetson or compatible carrier)
+- Plug-and-play for Jetson platforms with standard 2-lane MIPI interface
+- Provides missing 24 MHz MCLK via onboard crystal oscillator
+- Independent power rails: VDDIO, AVDD, VCORE, etc.
+- Supports wide variety of factory camera modules
+- Simple jumper/pin header voltage configuration
+- Board-to-board camera output, FPC Jetson input
 
-Supports **MIPI CSI-2 (1, 2 or 4 lane)** with I²C, GPIO, and multiple power domains:
+---
+
+## 🔌 Connector Overview
+
+### ▶️ Input: From Host Platform (Jetson)
+
+15-pin board-to-board or FPC connector (e.g., Hirose DF40):
+
+| Pin | Function        |
+|-----|-----------------|
+| 1   | GND             |
+| 2   | +3.3V_EXT       |
+| 3   | D0_N            |
+| 4   | D0_P            |
+| 5   | D1_N            |
+| 6   | D1_P            |
+| 7   | CLK_N           |
+| 8   | CLK_P           |
+| 9   | CAM_PWDN        |
+| 10  | CAM_MCLK        |
+| 11  | CAM_SCL_3V3     |
+| 12  | CAM_SDA_3V3     |
+| 13  | GND             |
+| 14  | GND             |
+| 15  | GND             |
+
+### ◀️ Output: To Camera Module (30-pin FPC)
+
+Supports 2 or 4 MIPI lanes, power rails, I2C, MCLK:
 
 | Pin | Function      | Pin | Function      |
 |-----|---------------|-----|---------------|
@@ -47,31 +72,22 @@ Supports **MIPI CSI-2 (1, 2 or 4 lane)** with I²C, GPIO, and multiple power dom
 | 27  | GND           | 28  | DPG           |
 | 29  | DNG           | 30  | GND           |
 
+MIPI signal traces controlled for **100Ω ±10Ω differential impedance**.
 
 ---
 
-### ◀️ Output: Board-to-Board Connector (to Camera Module)
+## ⚡ Power Rails
 
-- Compatible with multiple compact camera modules
-- Provides:
-  - 24 MHz MCLK
-  - Multiple configurable voltage domains:
-    - `VDDIO` (e.g., 1.8V)
-    - `AVDD` (e.g., 2.8V)
-    - `VCORE` (e.g., 1.2V)
-    - `DVDD`, `AFVDD` (as needed)
-  - I2C control
-  - MIPI CSI-2
+CAMEMAKE provides the following regulated outputs:
 
-Each power rail is independently regulated and labeled. Check your sensor’s datasheet and match voltages using the board’s jumpers or designated headers.
+| Rail     | Use Case                       |
+|----------|--------------------------------|
+| VDDIO    | I/O voltage (1.8, 2.8)   |
+| AVDD     | Analog supply (2.7, 2.8, 2.8, 3.3)      |
+| DVDD     | Digital core voltage (1.05, 1.5, 1.8) |
+
+Voltage selection is done through jumpers or onboard LDO regulators (see the sensor datasheet for the required voltage of the sensor).
 
 ---
-
-## 🛠 Schematics & Layout
-
-Design files are provided in **Altium Designer format**. View online:
-
-https://365.altium.com/files/9A22F9D0-325F-4AF5-839A-7F1FEFB84FBE?variant=[No+Variations]
-
-
+**Made with ❤️ by the CAMEMAKE Team**
 
