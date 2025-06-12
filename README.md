@@ -88,7 +88,7 @@ CAMEMAKE provides the following regulated outputs:
 | AVDD     | Analog supply (2.7, 2.8, 2.8, 3.3)      |
 | DVDD     | Digital core voltage (1.05, 1.5, 1.8) |
 
-Voltage selection is done through jumpers or onboard LDO regulators (see the sensor datasheet for the required voltage of the sensor).
+Voltage selection is done through jumpers (see the sensor datasheet for the required voltage of the sensor).
 
 ---
 **Made with ❤️ by the CAMEMAKE Team**
