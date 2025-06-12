@@ -71,11 +71,7 @@ Each power rail is independently regulated and labeled. Check your sensor’s da
 
 Design files are provided in **Altium Designer format**. View online:
 
-https://365.altium.com/files/9A22F9D0-325F-4AF5-839A-7F1FEFB84FBE
+https://365.altium.com/files/9A22F9D0-325F-4AF5-839A-7F1FEFB84FBE?variant=[No+Variations]
 
 
-
----
-
-## 📂 Repository Structure
 
