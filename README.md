@@ -1,8 +1,10 @@
-# CAMEMAKE – Universal MIPI CSI-2 Camera Adapter for Jetson
+# CAMEMAKE – Universal MIPI CSI-2 Camera Adapter for Nvidia Jetson or any other development board with the same pinout
 
 ![CAMEMAKE](./8d965933-4bc1-402a-b9b1-58cc3b36b0d1.jpg)
 
-**CAMEMAKE** created an open-source hardware adapter board that connects MIPI CSI-2 camera modules directly to NVIDIA Jetson boards such as the Nano, TX2, and Xavier NX. Many factory camera modules lack a timing crystal and require multiple independent voltage rails — this board provides those, allowing seamless integration.
+**CAMEMAKE** created an open-source hardware adapter board that connects MIPI CSI-2 camera modules directly to NVIDIA Jetson boards such as the Nano, TX2, and Xavier NX.
+It provides you the solution of adding a timing crystal and voltage level shifter to connect a set of different camera sensors on the power of the development kits.
+It is possible to reuse the schematic in your final design where you either provide the circuit on the carrier board or integrate the level shifters and crystal in the camera module.
 
 ---
 
