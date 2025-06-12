@@ -2,7 +2,7 @@
 
 ![CAMEMAKE](./8d965933-4bc1-402a-b9b1-58cc3b36b0d1.jpg)
 
-**CAMEMAKE** is an open hardware interface board designed to simplify connection between bare factory camera modules and NVIDIA Jetson platforms (Jetson Nano, TX2, Xavier NX, etc.) with a **2-lane MIPI CSI interface**.
+**CAMEMAKE** created an open hardware interface board designed to simplify connection between bare factory camera modules and NVIDIA Jetson platforms (Jetson Nano, TX2, Xavier NX, etc.) with a **2-lane MIPI CSI interface**.
 
 This adapter brings everything your camera module typically lacks:
 - A precise **timing crystal**
