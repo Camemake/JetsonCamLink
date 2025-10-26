@@ -1,10 +1,11 @@
-[![Documentation](https://img.shields.io/badge/docs-on%20website-blue)](https://www.camemaker.com/jetson-camera-adapter)
+[![Documentation](https://img.shields.io/badge/docs-on%20website-blue)](https://www.Camemaker.com/jetson-camera-adapter)
+![Custom](https://img.shields.io/badge/docs-on%20website-blue)](https://www.Camemake.eu/)
 
-# CAMEMAKE – Universal MIPI CSI-2 Camera Adapter for Nvidia Jetson or any other development board with the same pinout
+# Camemake – Universal MIPI CSI-2 Camera Adapter for Nvidia Jetson or any other development board with the same pinout
 
-![CAMEMAKE](./8d965933-4bc1-402a-b9b1-58cc3b36b0d1.jpg)
+![Camemake](./8d965933-4bc1-402a-b9b1-58cc3b36b0d1.jpg)
 
-**CAMEMAKE** created an open-source hardware adapter board that connects MIPI CSI-2 camera modules directly to NVIDIA Jetson boards such as the Nano, TX2, and Xavier NX.
+**Camemake** created an open-source hardware adapter board that connects MIPI CSI-2 camera modules directly to NVIDIA Jetson boards such as the Nano, TX2, and Xavier NX.
 It provides you the solution of adding a timing crystal and voltage level shifter to connect a set of different camera sensors on the power of the development kits.
 It is possible to reuse the schematic in your final design where you either provide the circuit on the carrier board or integrate the level shifters and crystal in the camera module.
 
@@ -82,7 +83,7 @@ MIPI signal traces controlled for **100Ω ±10Ω differential impedance**.
 
 ## ⚡ Power Rails
 
-CAMEMAKE provides the following regulated outputs:
+Camemake provides the following regulated outputs:
 
 | Rail     | Use Case                       |
 |----------|--------------------------------|
@@ -97,9 +98,9 @@ Voltage selection is done through jumpers (see the sensor datasheet for the requ
 
 # JetsonCamLink
 
-Official documentation and downloads: https://www.camemaker.com/jetson-camera-adapter
+Official documentation and downloads: https://www.Camemaker.com/jetson-camera-adapter
 
 If you use this hardware in a project or publication, please cite:
-Camemake https://www.camemake.eu . 2025. Jetson Camera Adapter. https://www.camemaker.com/jetson-camera-adapter
+Camemake https://www.Camemake.eu . 2025. Jetson Camera Adapter. https://www.Camemaker.com/jetson-camera-adapter
 
 
