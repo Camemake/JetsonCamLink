@@ -1,6 +1,6 @@
 [![Documentation](https://img.shields.io/badge/docs-on%20website-blue)](https://www.Camemaker.com/jetson-camera-adapter)
 [![Custom](https://img.shields.io/badge/docs-on%20website-blue)](https://www.Camemake.eu/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxx)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17449374.svg)](https://doi.org/10.5281/zenodo.17449374)
 
 
 # Camemake – Universal MIPI CSI-2 Camera Adapter for Nvidia Jetson or any other development board with the same pinout
