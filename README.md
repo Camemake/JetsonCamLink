@@ -91,5 +91,13 @@ CAMEMAKE provides the following regulated outputs:
 Voltage selection is done through jumpers (see the sensor datasheet for the required voltage of the sensor).
 
 ---
-**Made with ❤️ by the CAMEMAKE Team**
+**Made with ❤️ by the Camemake Team**
+
+# JetsonCamLink
+
+Official documentation and downloads: https://www.camemaker.com/jetson-camera-adapter
+
+If you use this hardware in a project or publication, please cite:
+Camemake https://www.camemake.eu . 2025. Jetson Camera Adapter. https://www.camemaker.com/jetson-camera-adapter
+
 
